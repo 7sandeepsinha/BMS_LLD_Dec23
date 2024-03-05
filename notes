@@ -1,0 +1,37 @@
+ORM -> Object Relational Mapping
+Object : instance of a class
+Relational -> Relational DB -> SQL
+
+classes and instances -> automatically create SQL tables and rows in the table
+
+class -> table
+object -> row in the table
+
+table -> rows and columns
+
+columns -> specific parts or attributes
+class attributes convert to columns in the table
+data -> row
+object of your classes -> convert to rows in the table
+
+List
+Set
+Association
+
+City -> List of theatres
+
+Mumbai -> T1, T2, T3
+
+Mumbai ( -> row in the city  table
+    "Mumbai",
+    <T1, T2, T3>
+)
+
+mapped to some rows in the Theatre
+
+
+Auditorium has shows -> 9-12, 12-3,         3-6,            6-9
+                         S1     S2          S3              S4
+                       titanic  rockstar  TeesMarkhan     DDLJ
+
+Show -> which movie, in which theatre, in which audi, with what features, which movie and what time
