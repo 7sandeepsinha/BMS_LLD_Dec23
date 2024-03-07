@@ -20,3 +20,9 @@ public class Seat extends BaseModel{
     @Enumerated(EnumType.STRING)
     private SeatStatus status;
 }
+
+/*
+        SELECT * FROM SEAT WHERE ROW = ? AND COL = ? AND SEATNUMBER IS NOT ?
+
+        findSeatByRowAndColNotSeatNumber(int row, int col, String seatNumber);
+ */
