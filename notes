@@ -35,3 +35,43 @@ Auditorium has shows -> 9-12, 12-3,         3-6,            6-9
                        titanic  rockstar  TeesMarkhan     DDLJ
 
 Show -> which movie, in which theatre, in which audi, with what features, which movie and what time
+
+
+Theatre -> adding this to BMS
+Theatre -> 4 auditoriums -> 100 seats
+max capacity -> 400
+
+When we buy a ticket, we are not buying the seat but we are occupying the seat for a particular show
+Class -> ShowSeat : combination of physical seat for a particular show
+
+
+Theatre -> T1 -> A1 -> 5 seats
+Titanic
+
+9AM, 12noon, 4PM, 9PM
+
+1   2   3   4   5
+9AM, -> 10
+A   A   A   B   B
+
+12 noon -> 11
+B   B   B   B   B
+
+4 PM -> 12
+A   A   A   A   A
+
+9PM -> 13
+B   B   B   B   A
+
+
+SEAT
+ID      STATUS
+1          9AM-A, 12NOON-B, 4PM-A, 9PM-B
+
+
+SHOWSEAT
+ID[SEATID,SHOWID]
+1,10                    A
+1,11                    B
+1,12                    A
+1,13                    B
