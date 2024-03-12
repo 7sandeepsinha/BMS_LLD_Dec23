@@ -16,8 +16,14 @@ public class TicketService {
     @Autowired
     private ShowSeatService showSeatService;
 
-    @Transactional(isolation = Isolation.SERIALIZABLE)
     public Ticket bookTicket(List<Integer> showSeatIds, int userId) throws Exception {
+        checkAndLockSeats(showSeatIds);
+        startPayment(showSeatIds);
+        return new Ticket();
+    }
+
+    @Transactional(isolation = Isolation.SERIALIZABLE)
+    public void checkAndLockSeats(List<Integer> showSeatIds) throws Exception {
         // checking if the selected seats are available
         for(int showSeatId : showSeatIds){
             ShowSeat seat = showSeatService.getShowSeat(showSeatId);
@@ -31,9 +37,6 @@ public class TicketService {
             seat.setShowSeatStatus(ShowSeatStatus.LOCKED);
             showSeatService.saveShowSeat(seat);
         }
-
-        startPayment(showSeatIds);
-        return new Ticket();
     }
 
     public boolean startPayment(List<Integer> showSeatIds){
