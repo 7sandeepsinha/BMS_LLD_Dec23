@@ -16,9 +16,17 @@ public class CityService {
         return city;
     }
 
+    public City getCityById(int cityId){
+        return cityRepository.findById(cityId).get();
+    }
+
     public City saveCity(String cityName){
         City city = new City();
         city.setName(cityName);
+        return cityRepository.save(city);
+    }
+
+    public City saveCity(City city){
         return cityRepository.save(city);
     }
 

@@ -15,7 +15,7 @@ public class CityController {
     @GetMapping("/city/{name}")
     public ResponseEntity getCityByName(@PathVariable("name") String cityName){
         City savedCity = cityService.getCityByName(cityName);
-        return ResponseEntity.ok(savedCity);
+        return ResponseEntity.ok(savedCity);  // we would return cityResponseDTO
     }
 
     @PostMapping("/city")
@@ -26,7 +26,7 @@ public class CityController {
                 throw new Exception("City Name is invalid");
             }
             City savedCity = cityService.saveCity(cityName);
-            return ResponseEntity.ok(savedCity);
+            return ResponseEntity.ok(savedCity); // we would return cityResponseDTO
         }catch (Exception e){
             e.printStackTrace();
         }

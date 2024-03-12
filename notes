@@ -89,3 +89,17 @@ GET -> get something from server
 POST -> create more data, add more data
 PUT -> update an existing data
 DELETE -> delete some data
+
+
+Controller -> Service -> Repo -> DB
+
+Controller -> Repo -> XXXX
+Service -> DB -> XXXX
+
+TicketController -> TicketService
+
+TicketService -> UserService, ShowSeatService, MovieService
+
+TicketService -> TicketRepo
+
+TicketService -> UserRepo -> XXXXXXXXX
