@@ -84,3 +84,8 @@ Hibernate -> generates SQL queries for Java applications
 JDBC -> Java Database Connection -> connects our Java application to DB
 
 
+HTTP
+GET -> get something from server
+POST -> create more data, add more data
+PUT -> update an existing data
+DELETE -> delete some data
