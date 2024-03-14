@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class CityController {
     @Autowired
@@ -16,6 +18,12 @@ public class CityController {
     public ResponseEntity getCityByName(@PathVariable("name") String cityName){
         City savedCity = cityService.getCityByName(cityName);
         return ResponseEntity.ok(savedCity);  // we would return cityResponseDTO
+    }
+
+    @GetMapping("/city")
+    public ResponseEntity getAllCities(){
+        List<City> cities = cityService.getAllCities();
+        return ResponseEntity.ok(cities);  // we would return cityResponseDTO
     }
 
     @PostMapping("/city")

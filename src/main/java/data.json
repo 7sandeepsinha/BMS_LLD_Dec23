@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "createdAt": null,
+    "updatedAt": null,
+    "createdBy": null,
+    "updatedBy": null,
+    "name": "Delhi",
+    "theatres": [
+      {
+        "id": 1,
+        "createdAt": null,
+        "updatedAt": null,
+        "createdBy": null,
+        "updatedBy": null,
+        "name": "AshishMultiplex",
+        "address": "CP, Delhi",
+        "auditoriums": [
+          {
+            "id": 1,
+            "createdAt": null,
+            "updatedAt": null,
+            "createdBy": null,
+            "updatedBy": null,
+            "name": "Audi01",
+            "capacity": 5,
+            "shows": [],
+            "seats": [
+              {
+                "id": 1,
+                "createdAt": null,
+                "updatedAt": null,
+                "createdBy": null,
+                "updatedBy": null,
+                "row": 1,
+                "col": 1,
+                "seatNumber": "1 1",
+                "seatType": "GOLD",
+                "status": "AVAILABLE"
+              },
+              {
+                "id": 2,
+                "createdAt": null,
+                "updatedAt": null,
+                "createdBy": null,
+                "updatedBy": null,
+                "row": 2,
+                "col": 2,
+                "seatNumber": "2 2",
+                "seatType": "GOLD",
+                "status": "AVAILABLE"
+              },
+              {
+                "id": 3,
+                "createdAt": null,
+                "updatedAt": null,
+                "createdBy": null,
+                "updatedBy": null,
+                "row": 3,
+                "col": 3,
+                "seatNumber": "3 3",
+                "seatType": "GOLD",
+                "status": "AVAILABLE"
+              },
+              {
+                "id": 4,
+                "createdAt": null,
+                "updatedAt": null,
+                "createdBy": null,
+                "updatedBy": null,
+                "row": 4,
+                "col": 4,
+                "seatNumber": "4 4",
+                "seatType": "GOLD",
+                "status": "AVAILABLE"
+              },
+              {
+                "id": 5,
+                "createdAt": null,
+                "updatedAt": null,
+                "createdBy": null,
+                "updatedBy": null,
+                "row": 5,
+                "col": 5,
+                "seatNumber": "5 5",
+                "seatType": "GOLD",
+                "status": "AVAILABLE"
+              }
+            ],
+            "auditoriumFeatures": [
+              "DOLBY",
+              "IMAX"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "createdAt": null,
+        "updatedAt": null,
+        "createdBy": null,
+        "updatedBy": null,
+        "name": "NithinIMAX",
+        "address": "Select City, Delhi",
+        "auditoriums": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "createdAt": null,
+    "updatedAt": null,
+    "createdBy": null,
+    "updatedBy": null,
+    "name": "Bangalore",
+    "theatres": []
+  },
+  {
+    "id": 3,
+    "createdAt": null,
+    "updatedAt": null,
+    "createdBy": null,
+    "updatedBy": null,
+    "name": "Canberra",
+    "theatres": []
+  }
+]

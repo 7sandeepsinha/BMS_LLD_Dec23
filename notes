@@ -103,3 +103,17 @@ TicketService -> UserService, ShowSeatService, MovieService
 TicketService -> TicketRepo
 
 TicketService -> UserRepo -> XXXXXXXXX
+
+
+spring.jpa.hibernate.ddl-auto=update -> keep whatever is present and do the required update
+spring.jpa.hibernate.ddl-auto=update -> everytime if you restart the server, drops all the tables and creates them from scratch
+
+
+Tasks ->
+1. Create a ticket creation flow, and API. Take input as userId, showId, and list of showSeatIds
+    [ need to update user ticket history as well]
+2. Create CRUD APIs for all the entities
+    ex -> ShowSeat create -> show || for show, we can pass the show id from the postman DTO object
+3. Replace all normal exceptions with custom exceptions
+
+
